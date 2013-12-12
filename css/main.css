@@ -39,23 +39,21 @@ header {
 }
 header .container {
     max-width: 900px;
-    /*height: 74px;*/
     padding: 20px 10px;
     margin: 0 auto;
 }
-header .container h1 {
-    float: left;
-}
 header .container h1 a {
     display: block;
-    width: 140px;
+    width: 215px;
     height: 74px;
+    margin: 0 auto;
 }
 header .container h1 a img {
     max-height: 100%;
 }
-header nav ul {
-    float: right;
+
+header nav {
+    text-align: center;
 }
 header nav ul li {
     display: inline;
@@ -86,6 +84,7 @@ header .container p {
     text-align: center;
     font-weight: 200;
     font-size: 1.7em;
+    margin-top: 0px;
     margin-bottom: 0px;
 }
 
@@ -134,4 +133,16 @@ header .container p {
     font-size: 1.5em;
     font-weight: 300;
     line-height: 1.6;
+}
+
+@media screen and (min-width: 500px) {
+    header .container h1 {
+        float: left;
+    }
+    header nav ul {
+        float: right;
+    }
+    header .container p {
+        margin-top: inherit;
+    }
 }
