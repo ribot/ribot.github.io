@@ -41,7 +41,7 @@ header {
 header .container {
     max-width: 900px;
     height: 74px;
-    padding: 20px 0;
+    padding: 20px 10px;
     margin: 0 auto;
 }
 header .container h1 {
@@ -65,22 +65,26 @@ header .container p {
 #projects {
     width: 900px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 .project {
-    padding: 20px 10px;
+    padding: 20px 0;
 }
 .project img {
     float: right;
-    width: 400px;
-    height: 350px;
+    max-width: 475px;
     margin-left: 20px;
 }
 .project h2 {
     font-weight: 200;
     font-size: 3em;
+    margin-top: 10px;
 }
 .project h2 a {
     text-decoration: none;
+    color: #333333;
+}
+.project h2 a:hover {
     color: #00A2DB;
 }
 .project p.subtitle {
@@ -90,7 +94,7 @@ header .container p {
     font-size: 1.3em;
 }
 .project .description {
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: 300;
     line-height: 1.5;
 }

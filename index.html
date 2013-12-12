@@ -6,8 +6,8 @@ title: ribot cogs
 <div id="projects">
     {% for post in site.posts %}
         <div class="project">
-            <img src="img/projects/{{ post.project_id }}.png" alt="{{ post.title }}" />
-            <h2><a href="{{ post.project_url }}">{{ post.title }}</a></h2>
+            <a href="{{ post.project-url }}"><img src="img/projects/{{ post.project-id }}.png" alt="{{ post.title }}" /></a>
+            <h2><a href="{{ post.project-url }}">{{ post.title }}</a></h2>
             <p class="subtitle">{{ post.subtitle }}</p>
             <div class="description">
                 {{ post.content }}
