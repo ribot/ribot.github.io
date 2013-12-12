@@ -31,12 +31,15 @@ table {
 }
 
 /* Site layout */
+body {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
 header {
-    background-color: #0197CC;
+    background-color: #00A2DB;
     color: #FEFEFE;
 }
 header .container {
-    max-width: 800px;
+    max-width: 900px;
     height: 74px;
     padding: 20px 0;
     margin: 0 auto;
@@ -54,39 +57,40 @@ header .container h1 a img {
 }
 header .container p {
     float: right;
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
     font-size: 1.7em;
 }
 
-/* Code layout */
-.post pre {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    padding: 0 .4em;
+/* Project list */
+#projects {
+    width: 900px;
+    margin: 0 auto;
 }
-
-.post ul, .post ol {
-    margin-left: 1.35em;
+.project {
+    padding: 20px 10px;
 }
-
-.post code {
-    border: 1px solid #ddd;
-    background-color: #eef;
-    padding: 0 .2em;
+.project img {
+    float: right;
+    width: 400px;
+    height: 350px;
+    margin-left: 20px;
 }
-
-.post pre code {
-    border: none;
+.project h2 {
+    font-weight: 200;
+    font-size: 3em;
 }
-
-/* terminal */
-.post pre.terminal {
-    border: 1px solid #000;
-    background-color: #333;
-    color: #FFF;
+.project h2 a {
+    text-decoration: none;
+    color: #00A2DB;
 }
-
-.post pre.terminal code {
-    background-color: #333;
+.project p.subtitle {
+    margin-top: 0;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.3em;
+}
+.project .description {
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 1.5;
 }
