@@ -4,14 +4,17 @@ title: ribot cogs
 ---
 
 <div id="projects">
-    {% for post in site.posts %}
-        <div class="project">
-            <a href="{{ post.project-url }}"><img src="img/projects/{{ post.project-id }}.png" alt="{{ post.title }}" /></a>
-            <h2><a href="{{ post.project-url }}">{{ post.title }}</a></h2>
-            <p class="subtitle">{{ post.subtitle }}</p>
-            <div class="description">
-                {{ post.content }}
+    {% if site.categories.android %}
+        <h2>Android</h2>
+        {% for post in site.categories.android %}
+            <div class="project">
+                <a href="{{ post.project-url }}"><img src="img/projects/{{ post.project-id }}.png" alt="{{ post.title }}" /></a>
+                <h3><a href="{{ post.project-url }}">{{ post.title }}</a></h3>
+                <p class="subtitle">{{ post.subtitle }}</p>
+                <div class="description">
+                    {{ post.content }}
+                </div>
             </div>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    {% endif %}
 </div>
