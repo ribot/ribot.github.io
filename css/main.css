@@ -23,7 +23,6 @@ p { margin: 1em 0; }
 
 a         { color: #00a; }
 a:hover   { color: #000; }
-a:visited { color: #a0a; }
 
 table {
     font-size: inherit;
@@ -40,7 +39,7 @@ header {
 }
 header .container {
     max-width: 900px;
-    height: 74px;
+    /*height: 74px;*/
     padding: 20px 10px;
     margin: 0 auto;
 }
@@ -55,10 +54,39 @@ header .container h1 a {
 header .container h1 a img {
     max-height: 100%;
 }
-header .container p {
+header nav ul {
     float: right;
+}
+header nav ul li {
+    display: inline;
+    line-height: 74px;
+}
+header nav ul li a {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 6px 14px 7px 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+}
+header nav ul li a:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+header nav ul li a .fa {
+    font-size: 1.5em;
+    position: relative;
+    top: 3px;
+}
+header .container p {
+    clear: both;
+    text-align: center;
     font-weight: 200;
     font-size: 1.7em;
+    margin-bottom: 0px;
 }
 
 /* Project list */
