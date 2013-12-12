@@ -72,10 +72,12 @@ header .container p {
     font-weight: 200;
     color: #00A2DB;
     margin-top: 50px;
+    margin-bottom: -20px;
 }
 
 .project {
     padding: 20px 0;
+    margin-top: 20px;
 }
 .project img {
     float: right;
